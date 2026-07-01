@@ -1,0 +1,128 @@
+@use '../utils/variables' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: $card-width;
+  box-sizing: border-box;
+  border-radius: $card-borderradius;
+  border: 1px solid $light-color;
+  background-color: $white-color;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    margin: $image-margin;
+    display: block;
+    width: $image-width;
+    height: $image-height;
+  }
+
+  &__image--image {
+    margin: 0;
+  }
+
+  &__product {
+    margin: $product-margin;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $dark-blue-color;
+  }
+
+  &__code {
+    margin: $code-margin;
+    width: $code-width;
+    height: $code-height;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    color: $grey-color;
+  }
+
+  &_rate {
+    margin: $rate-margin;
+    width: $rate-width;
+    height: $rate-height;
+  }
+
+  &__rate--starsreviews {
+    margin: $starreview-margin;
+    display: flex;
+    flex-direction: row;
+    width: $starreview-width;
+    height: $starreview-height;
+    justify-content: space-between;
+  }
+  &__reviews {
+    width: $reviews-width;
+    height: $reviews-height;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: $dark-blue-color;
+  }
+
+  &__price {
+    margin: $price-margin;
+    width: $price-width;
+    height: $price-height;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__price--price {
+    margin: $price-pricemargin;
+    width: $price-pricewidth;
+    height: $price-priceheight;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: $grey-color;
+  }
+
+  &__price--value {
+    margin-left: $value-margin;
+    width: $value-width;
+    height: $value-height;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: $dark-blue-color;
+  }
+
+  &__button {
+    margin: $bottom-margin;
+    width: $bottom-width;
+    height: $bottom-height;
+    margin-left: 17px;
+    border-radius: 5px;
+    background-color: $bottom-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    color: $white-color;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  &__button:hover {
+    border: 1px solid $bottom-color;
+    color: $bottom-color;
+    background-color: $white-color;
+  }
+}
