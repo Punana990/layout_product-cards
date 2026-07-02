@@ -2,12 +2,6 @@
 
 .stars {
   display: flex;
-  margin-left: $stars-margin;
-  margin-top: $stars-margin;
-  width: $stars-width;
-  height: $stars-height;
-  border-radius: 0.5px;
-  justify-content: space-between;
 
   &__star {
     height: $stars-size;
@@ -15,6 +9,8 @@
     background-image: url(../images/star.svg);
     background-repeat: no-repeat;
     color: $light-color;
+    background-position: center;
+    margin-right: 2px;
   }
 
   &--1 &__star:nth-child(-n + 1),
@@ -23,6 +19,5 @@
   &--4 &__star:nth-child(-n + 4),
   &--5 &__star:nth-child(-n + 5) {
     background-image: url(../images/star-active.svg);
-    background-repeat: no-repeat;
   }
 }
